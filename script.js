@@ -1,6 +1,6 @@
 
 
-$("button").click(function getCountries() {
+$("#btnShowCountries").click(function getCountries() {
 
 
     $.ajax({
