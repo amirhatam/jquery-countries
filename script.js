@@ -1,13 +1,15 @@
 
 
-$("#btnShowCountries").click(function getCountries() {
+$("#btnShowCountries").click( () => {
 
 
     $.ajax({
+
         url: 'http://localhost:8000/countries',
-        success: function (data, statuts, response) {
+        success: (data, statuts, response) => {
 
             // $("#country").html(data);
+
             $("#country-1").html(data[0]);
             $("#country-2").html(data[1]);
             $("#country-3").html(data[2]);
