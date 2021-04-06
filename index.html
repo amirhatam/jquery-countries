@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,45 @@
     <link rel="stylesheet" href="./bootstrap.css">
     <title>List of countries</title>
 </head>
+
 <body>
-    <button class="btn btn-outline-dark btn-lg" id="btnShowCountries">Show countries</button>
+
+    <div class=" row">
+        <button class="btn btn-outline-dark btn-lg offset-4 col-3" id="btnShowCountries">Show Countries</button>
+        <button class="btn btn-outline-dark btn-lg offset-4 col-3" id="btnShowCapital">Show Capital</button>
+    </div>
 
     <p><span id="country"></span></p>
+    <div>
+        <ul class="p-0 row" style="list-style: none;">
 
-    <ul class="p-0" style="list-style: none;">
-    <li class="border border-secondary col-3 text-light bg-dark p-3 display-6 text-muted">Country : <span class="text-light"  id="country-1"></span></li>
-    <li class="border border-secondary col-3 text-light bg-dark p-3 display-6 text-muted">Country : <span class="text-light"  id="country-2"></span></li>
-    <li class="border border-secondary col-3 text-light bg-dark p-3 display-6 text-muted">Country : <span class="text-light"  id="country-3"></span></li>
-    <li class="border border-secondary col-3 text-light bg-dark p-3 display-6 text-muted">Country : <span class="text-light"  id="country-4"></span></li>
-    <li class="border border-secondary col-3 text-light bg-dark p-3 display-6 text-muted">Country : <span class="text-light"  id="country-5"></span></li>
-    </ul>
+            <li class="border border-secondary offset-4 col-3 text-light bg-dark p-3 display-6 text-muted">Country :
+                <span class="text-light " id="country-1"></span></li>
+            <input class="col-2 display-6 text-muted bg-light bg-gradient" type="text" name="" id="capital1" value="">
+
+            <li class="border border-secondary offset-4 col-3 text-light bg-dark p-3 display-6 text-muted">Country :
+                <span class="text-light" id="country-2"></span></li>
+            <input class="col-2 display-6 text-muted bg-light bg-gradient" type="text" name="" id="capital2" value="">
+
+            <li class="border border-secondary offset-4 col-3 text-light bg-dark p-3 display-6 text-muted">Country :
+                <span class="text-light" id="country-3"></span></li>
+            <input class="col-2 display-6 text-muted bg-light bg-gradient" type="text" name="" id="capital3" value="">
+
+            <li class="border border-secondary offset-4 col-3 text-light bg-dark p-3 display-6 text-muted">Country :
+                <span class="text-light" id="country-4"></span></li>
+            <input class="col-2 display-6 text-muted bg-light bg-gradient" type="text" name="" id="capital4" value="">
+
+            <li class="border border-secondary offset-4 col-3 text-light bg-dark p-3 display-6 text-muted">Country :
+                <span class="text-light" id="country-5"></span></li>
+            <input class="col-2 display-6 text-muted bg-light bg-gradient" type="text" name="" id="capital5" value="">
+
+        </ul>
+    </div>
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="./script.js"></script>
 </body>
+
 </html>
